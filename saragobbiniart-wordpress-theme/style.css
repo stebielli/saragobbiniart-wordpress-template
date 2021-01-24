@@ -265,7 +265,7 @@ Sara Gobbini Art is distributed under the terms of the GNU GPL.
 	--primary-nav--color-text: var(--global--color-primary);
 	--primary-nav--padding: calc(0.66 * var(--global--spacing-unit));
 	--primary-nav--border-color: var(--global--color-primary);
-	--primary-nav--height: calc(5 * var(--global--spacing-vertical));
+	--primary-nav--height: calc(5.5 * var(--global--spacing-vertical));
 
 	/* Pagination */
 	--pagination--color-text: var(--global--color-primary);
@@ -4771,6 +4771,53 @@ h1.page-title {
 	z-index: 10;
 }
 
+.primary-navigation .primary-navigation-sticky-logo-container {
+	position: absolute;
+	width: var(--responsive--alignwide-width);
+	margin: auto;
+}
+
+.primary-navigation .primary-navigation-sticky-logo {
+	height: calc(4.5 * var(--global--spacing-vertical));
+}
+
+.primary-navigation-sticky-logo-hide {
+	display: none;
+}
+
+.fade-in {
+	animation: fadeIn ease 1s;
+	-webkit-animation: fadeIn ease 1s;
+	-moz-animation: fadeIn ease 1s;
+	-o-animation: fadeIn ease 1s;
+	-ms-animation: fadeIn ease 1s;
+  }
+
+  @keyframes fadeIn {
+	0% { opacity:0;	}
+	100% { opacity:1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+	0% { opacity:0;	}
+	100% { opacity:1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+	0% { opacity:0;	}
+	100% { opacity:1; }
+  }
+  
+  @-o-keyframes fadeIn {
+	0% { opacity:0;	}
+	100% { opacity:1; }
+  }
+  
+@-ms-keyframes fadeIn {
+	0% { opacity:0;	}
+	100% { opacity:1; }
+}
+
 @media only screen and (max-width: 481px) {
 
 	.primary-navigation > .primary-menu-container {
@@ -4830,6 +4877,7 @@ h1.page-title {
 		margin: auto;
 		display: flex;
 		align-items: center;
+		justify-content: center;
 	}
 
 	.primary-navigation > .primary-menu-container {

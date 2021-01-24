@@ -21,6 +21,11 @@
 				</span>
 			</button><!-- #primary-mobile-menu -->
 		</div><!-- .menu-button-container -->
+
+		<div class="primary-navigation-sticky-logo-container primary-navigation-sticky-logo-hide">
+			<img class="primary-navigation-sticky-logo" src=<?php echo get_template_directory_uri() . "/assets/images/logo_short.jpg" ?> />
+		</div>
+		
 		<?php
 		wp_nav_menu(
 			array(
