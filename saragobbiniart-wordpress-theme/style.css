@@ -244,7 +244,7 @@ Sara Gobbini Art is distributed under the terms of the GNU GPL.
 	--branding--description--font-size: var(--global--font-size-sm);
 	--branding--description--font-family: var(--global--font-secondary);
 	--branding--logo--max-width: 600px;
-	--branding--logo--max-height: 200px;
+	--branding--logo--max-height: 150px;
 	--branding--logo--max-width-mobile: 96px;
 	--branding--logo--max-height-mobile: 96px;
 
@@ -883,6 +883,10 @@ template {
 
 .site-main > *:last-child {
 	margin-bottom: 0;
+}
+
+.home .site-main {
+	padding-top: 0;
 }
 
 /**
@@ -3837,7 +3841,7 @@ table.wp-calendar-table caption {
 	display: flex;
 	align-items: flex-start;
 	flex-wrap: wrap;
-	row-gap: var(--global--spacing-vertical);
+	row-gap: calc(0 * var(--global--spacing-vertical));
 }
 
 .wp-custom-logo .site-header {
